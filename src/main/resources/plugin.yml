@@ -4,3 +4,8 @@ version: '${version}'
 main: com.vqlt.nopiglinbrute.NoPiglinBrute
 api-version: '1.21.8'
 load: POSTWORLD
+
+commands:
+  disablebrutes:
+    description: Enables or disables Piglin Brute spawning
+    usage: /disablebrutes <true/false>
