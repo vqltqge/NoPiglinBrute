@@ -1,0 +1,6 @@
+name: NoPiglinBrute
+version: '${version}'
+
+main: com.vqlt.nopiglinbrute.NoPiglinBrute
+api-version: '1.21.8'
+load: POSTWORLD
