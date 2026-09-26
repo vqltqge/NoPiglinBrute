@@ -40,16 +40,9 @@ public class DisableBrutesCommand implements CommandExecutor, TabCompleter {
     }
 
     @Override
-    public List<String> onTabComplete(
-            @NotNull CommandSender sender,
-            @NotNull Command command,
-            @NotNull String alias,
-            @NotNull String[] args
-    ) {
+    public List<String> onTabComplete(@NotNull CommandSender sender, @NotNull Command command, @NotNull String alias, @NotNull String[] args) {
         if (args.length == 1) {
-            return List.of("true", "false").stream()
-                    .filter(option -> option.startsWith(args[0].toLowerCase()))
-                    .toList();
+            return List.of("true", "false").stream().filter(option -> option.startsWith(args[0].toLowerCase())).toList();
         }
 
         return List.of();

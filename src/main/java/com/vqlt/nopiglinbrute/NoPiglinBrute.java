@@ -17,7 +17,7 @@ public final class NoPiglinBrute extends JavaPlugin {
         getCommand("disablebrutes").setExecutor(command);
         getCommand("disablebrutes").setTabCompleter(command);
 
-        getServer().getPluginManager().registerEvents(new PiglinBruteSpawnListener(), this);
+        getServer().getPluginManager().registerEvents(new ChunkLoadListener(this), this);
     }
 
     @Override
